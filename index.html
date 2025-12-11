@@ -30,7 +30,7 @@
   <!-- HERO SECTION -->
  <section class="hero">
   <div class="hero-left">
-    <p>
+    <p class="badge para">
         🌿 Awarded the best perfume in the world
     </p>
 
@@ -63,13 +63,13 @@
   <!-- PRODUCT SECTION -->
   <section class="product">
     <div class="product-img">
-      <img src="large-bottle.png" class="main-img" id="mainImg" />
+      <img src="./assets/Images/large-bottle.png" class="main-img" id="mainImg" />
 
       <div class="thumbs">
-        <img src="p1.png" onclick="changeImg(this.src)" />
-        <img src="p2.png" onclick="changeImg(this.src)" />
-        <img src="p3.png" onclick="changeImg(this.src)" />
-        <img src="p4.png" onclick="changeImg(this.src)" />
+        <img src="./assets/Images/image4.jpg" onclick="changeImg(this.src)" />
+        <img src="./assets/Images/image2.jpg" onclick="changeImg(this.src)" />
+        <img src="./assets/Images/image1.jpg" onclick="changeImg(this.src)" />
+        <img src="./assets/Images/image3.jpg" onclick="changeImg(this.src)" />
       </div>
     </div>
 
@@ -107,15 +107,17 @@
             <li>28 Day Money Back Guarantee</li>
           </ul>
 
-          <label class="row">
+        
+
+         
+        </div>
+      </div>
+        <label class="row2">
             <input type="radio" name="sub" />
             <span>Double Subscription</span>
             <span class="price">$169.99 <s>$189</s></span>
           </label>
-
-          <button class="btn full">Add to Cart</button>
-        </div>
-      </div>
+           <button class="cart-btn">Add to Cart</button>
     </div>
   </section>
 
@@ -149,8 +151,8 @@
       </div>
     </div>
 
-    <div class="right">
-      <img src="hands.jpg" />
+    <div>
+      <img src="./assets/Images/hands.jpg"/>
     </div>
   </section>
 
@@ -164,15 +166,33 @@
 
   <!-- COMPARISON -->
   <section class="comparison">
-    <h2>Why GTG is the #1 Choice</h2>
+    <h2 class="h2-tag">Why GTG is the #1 Choice</h2>
 
     <table>
       <tr>
-        <th>Qualities</th>
-        <th class="yes">GTG</th>
-        <th>Arose</th>
-        <th>Bella</th>
-        <th>Daisies</th>
+        <th>Qualities
+            
+        </th>
+        <th class="yes">
+             <div class="head-cell">
+    <img src="./assets/Images/bottle.jpg" alt="icon" />
+    <span>GTG</span>
+  </div>
+        </th>
+        <th><div class="head-cell">
+    <img src="./assets/Images/image4.jpg" alt="icon" />
+    <span>Arose</span>
+  </div></th>
+        <th><div class="head-cell">
+    <img src="./assets/Images/image1.jpg" alt="icon" />
+    <span>Bella</span>
+  </div></th>
+        <th>
+            <div class="head-cell">
+    <img src="./assets/Images/image3.jpg" alt="icon" />
+    <span>daisies</span>
+  </div>
+        </th>
       </tr>
       <tr><td>Potency</td><td class="yes">10x</td><td>1x</td><td>1x</td><td>10x</td></tr>
       <tr><td>Longevity</td><td class="yes">✔</td><td>✖</td><td>✖</td><td>✔</td></tr>
@@ -183,27 +203,61 @@
       <tr><td>Price vs Quality</td><td class="yes">✔</td><td>✖</td><td>✖</td><td>✔</td></tr>
     </table>
 
-    <button class="btn">Try It Risk-Free</button>
+    <button class="final-btn">Try It Risk-Free</button>
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
-    <div>
-      <h3>GTG</h3>
-      <p>Home • Shop • Fragrances • About • Contact</p>
-    </div>
+   
+<footer class="footer">
 
-    <div>
-      <h3>Social</h3>
-      <p>Facebook • Instagram • X</p>
-    </div>
+  <!-- Column 1 -->
+   
+<div>
+<h1>GTG</h1>
+</div>
 
-    <div>
-      <h3>Newsletter</h3>
-      <input placeholder="Enter your email" />
-      <button class="btn small">Subscribe</button>
-    </div>
-  </footer>
+    <div class="footer-col">
+   
+    <ul>
+      <li>Home</li>
+      <li>Shop</li>
+      <li>Fragrances</li>
+    </ul>
+  </div>
+
+  <!-- Column 2 -->
+  <div class="footer-col">
+    
+    <ul>
+      <li>About</li>
+      <li>Blog</li>
+      <li>Contact</li>
+    </ul>
+  </div>
+
+  <!-- Column 3 -->
+  <div class="footer-col">
+    
+    <ul>
+      <li>Facebook</li>
+      <li>Instagram</li>
+      <li>X</li>
+    </ul>
+  </div>
+
+  <!-- Column 4 -->
+  <div class="footer-col">
+    <h5>Join our newsletter to stay up to date on features and releases.</h2>
+   <div class="footer-email">
+     <input placeholder="Enter your email" />
+    <button class="footer-btn">Subscribe</button>
+   </div>
+    <h6>By subscribing you agree to with our Privacy Policy and provide consent to receive updates from our company.</h6>
+ 
+</div>
+
+</footer>
+
 
   <script src="script.js"></script>
 </body>
